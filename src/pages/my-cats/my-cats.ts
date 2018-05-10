@@ -2,13 +2,17 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'page-contact',
-  templateUrl: 'contact.html'
+  selector: 'page-my-cats',
+  templateUrl: 'my-cats.html'
 })
-export class ContactPage {
+export class MyCatsPage {
 
   constructor(public navCtrl: NavController) {
 
+  }
+
+  goToSettings(){
+    this.navCtrl.push('settings');
   }
 
 }
